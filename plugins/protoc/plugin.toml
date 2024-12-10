@@ -5,10 +5,10 @@ name = "protoc"
 type = "cli"
 
 [platform.linux]
-download-file = "protoc-{version}-linux-{arch}"
+download-file = "protoc-{version}-linux-{arch}.zip"
 
 [platform.macos]
-download-file = "protoc-{version}-osx-{arch}"
+download-file = "protoc-{version}-osx-{arch}.zip"
 
 [platform.windows]
 download-file = "skaffold-{version}-{arch}.exe"
@@ -18,7 +18,7 @@ download-url = "https://github.com/protocolbuffers/protobuf/releases/download/v{
 
 [install.arch]
 aarch64 = "aarch_64"
-x86_64 = "amd64"
 
 [resolve]
-git-url = "https://github.com/protocolbuffers/protobuf"
+git-url = "https://github.com/protocolbuffers/protobuf/"
+version-pattern = "(?<major>\\d+)\\.(?<minor>\\d+)" 

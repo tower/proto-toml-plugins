@@ -12,7 +12,7 @@ node:
 
   # The version of the package manager (above) to use.
   yarn:
-    version: 4.2.2
+    version: 1.22.22
     installArgs:
       - --immutable
 

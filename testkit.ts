@@ -14,7 +14,7 @@ export function run({
 	name: string;
 	afterInstall?: ($: Shell) => Promise<void>;
 }) {
-	const tomlPathSource = pathJoin(import.meta.dirname, name, "plugin.toml");
+	const tomlPathSource = pathJoin(import.meta.dirname, "plugins", name, "plugin.toml");
 	const content = readFileSync(tomlPathSource, { encoding: "utf-8" });
 	const data = toml.parse(content) as Plugin;
 	const platform = getPlatform();
