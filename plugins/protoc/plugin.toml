@@ -11,7 +11,7 @@ download-file = "protoc-{version}-linux-{arch}.zip"
 download-file = "protoc-{version}-osx-{arch}.zip"
 
 [platform.windows]
-download-file = "skaffold-{version}-{arch}.exe"
+download-file = "protoc-{arch}.zip"
 
 [install]
 download-url = "https://github.com/protocolbuffers/protobuf/releases/download/v{version}/{download_file}"
