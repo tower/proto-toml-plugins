@@ -1,0 +1,24 @@
+# A TOML plugin for proto:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "protoc"
+type = "cli"
+
+[platform.linux]
+download-file = "protoc-{version}-linux-{arch}"
+
+[platform.macos]
+download-file = "protoc-{version}-osx-{arch}"
+
+[platform.windows]
+download-file = "skaffold-{version}-{arch}.exe"
+
+[install]
+download-url = "https://github.com/protocolbuffers/protobuf/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "aarch_64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/protocolbuffers/protobuf"
